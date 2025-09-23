@@ -1,115 +1,72 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import RetroPlayer from "@/components/player";
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="flex h-screen">
+      {/* Lateral Esquerda */}
+      <aside className="w-120 bg-black/50 border-r-4 border-pink-500 flex flex-col justify-between py-6 items-center">
+       <RetroPlayer />
+
+        <img
+          src="https://media.giphy.com/media/l0HlOvJ7yaacpuSas/giphy.gif"
+          alt="Matrix"
+          className="w-full border-2 border-yellow-400"
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              pages/index.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        <img
+          src="/baby_vintage.gif"
+          alt="Pikachu"
+          className="w-full border-2 border-lime-400"
+        />
+      </aside>
+
+      {/* Conteúdo Central */}
+      <main className="flex-1 flex justify-center items-center overflow-y-auto p-10">
+        <article className="flex flex-col gap-10 text-center w-full h-full bg-pink-900/70 border-4 border-yellow-300 shadow-[10px_10px_0px_black] p-10">
+          <h2 className="text-5xl font-extrabold text-cyan-300 underline decoration-wavy decoration-yellow-400 drop-shadow-lg">
+            Startup Enxuta
+          </h2>
+
+          <p className="text-xl leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora impedit incidunt et quos, quia repellendus eveniet obcaecati, labore voluptas ipsum dolores doloribus unde expedita ratione! Illum sunt repellat alias!
+          </p>
+
+          <div className="bg-black/70 border-2 border-yellow-400 p-6 shadow-inner">
+            <p className="font-mono text-green-300 text-lg">
+              &gt; Olá mundo...
+            </p>
+          </div>
+
+          <img
+            src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
+            alt="Gif retrô"
+            className="mx-auto border-4 border-lime-300 shadow-[8px_8px_0px_black] w-64"
+          />
+
+          <p className="text-xl">
+            Obrigado por visitar! Sinta-se em casa e curta o clima nostálgico.
+            <span className="animate-pulse text-pink-400 text-2xl"> 💖</span>
+          </p>
+        </article>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+      {/* Lateral Direita */}
+      <aside className="w-120 bg-black/50 border-l-4 border-cyan-500 flex flex-col justify-between py-6 items-center">
+        <img
+          src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
+          alt="Windows XP"
+          className="w-full border-2 border-cyan-400"
+        />
+        <img
+          src="https://www.animatedgif.net/fire/fireani_e0.gif"
+          alt="Fire flames"
+          className="w-full border-2 border-red-500"
+        />
+        <img
+          src="https://media.giphy.com/media/9J7tdYltWyXIY/giphy.gif"
+          alt="Hacker gif"
+          className="w-full border-2 border-green-400"
+        />
+      </aside>
     </div>
   );
 }

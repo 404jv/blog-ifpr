@@ -8,6 +8,11 @@ export default function Home() {
       <aside className="w-120 bg-black/50 border-r-4 border-pink-500 flex flex-col justify-between py-6 items-center">
        <RetroPlayer />
 
+        <div className="w-full border-2 h-1/3 justify-center flex flex-col border-pink-400 bg-gradient-to-r from-pink-600 via-yellow-400 to-pink-600 text-center p-2 animate-pulse">
+          <p className="text-black text-2xl font-extrabold">💾 Download grátis!</p>
+          <p className="text-black text-xl">Clique aqui (se tiver coragem 😱)</p>
+        </div>
+
         <img
           src="https://media.giphy.com/media/l0HlOvJ7yaacpuSas/giphy.gif"
           alt="Matrix"
@@ -18,6 +23,11 @@ export default function Home() {
           alt="Pikachu"
           className="w-full border-2 border-lime-400"
         />
+
+        {/* Banner piscando estilo orkut */}
+        <div className="w-full border-4 border-green-500 bg-black text-green-400 text-center p-4 animate-bounce shadow-[4px_4px_0px_lime]">
+          <p className="font-mono text-lg">⚠️ Você é o visitante nº 1337</p>
+        </div>
       </aside>
 
       {/* Conteúdo Central */}
@@ -70,6 +80,13 @@ export default function Home() {
           alt="Windows XP"
           className="w-full border-2 border-cyan-400"
         />
+
+        {/* Banner piscando estilo popup */}
+        <div className="w-full bg-yellow-400 border-4 border-red-600 text-center p-3 animate-pulse shadow-[6px_6px_0px_black]">
+          <p className="text-red-900 font-extrabold text-lg">🎉 GANHE 1000 CLICKS!</p>
+          <p className="text-black text-sm">Oferta imperdível, só hoje!</p>
+        </div>
+
         <img
           src="https://www.animatedgif.net/fire/fireani_e0.gif"
           alt="Fire flames"

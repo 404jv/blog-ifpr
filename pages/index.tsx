@@ -27,6 +27,19 @@ export default function Home() {
             Startup Enxuta
           </h2>
 
+          <div className="bg-black/70 border-2 border-yellow-400 p-6 shadow-inner">
+          
+          <p className="font-mono text-green-300 text-lg">
+              &gt; Olá mundo... Startup Enxuta: esse livro pode deixar todo programador rico?
+            </p>
+          </div>
+
+          <img
+            src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
+            alt="Gif retrô"
+            className="mx-auto border-4 border-lime-300 shadow-[8px_8px_0px_black] w-64"
+          />
+
           <p className="text-2xl leading-relaxed">Inspirado na metodologia Manufatura Enxuta, criada no Japão após a Segunda Guerra Mundial e feita pelo Sistema Toyota de Produção (STP). Surgiu assim, a Startup Enxuta, ambas metodologias com foco em eliminar desperdícios e focar naquilo que realmente importa para os clientes finais, enquanto a Manufatura da Toyota elimina retrabalhos da máquina ou estoques em excesso, a Startup Enxuta elimina funcionalidades desnecessárias e achismos. Por isso, um dos focos principais dita pelo Eric Ries no livro, é construir, medir e aprender. Vamos analisar cada parte disso durante esse post.</p>
 
           <p className="text-2xl leading-relaxed">Startup Lean, ou Startup Enxuta surgiu em 2008, porém somente em 2011 que ganhou um livro consolidando os conhecimentos da metodologia. Rapidamente isso se espalhou em diversos locais do mundo, não só aplicada em empresas privadas, mas também em órgãos governamentais e até ONGs. A grande razão para o motivo disso ter acontecido, foi a falta de método científico no desenvolvimento de software mundial. A comunidade não tinha uma forma de seguir um passo à passo para garantir que aquilo que está sendo feito vai ser realmente usado pelo consumidor final. Portanto, o primeiro passo da metodologia é construir uma versão mais simples possível do sistema ou funcionalidade, conhecido como MVP (Produto Mínimo Viável). Mas, isso não significa que é algo que não funciona, ao contrário, é funcional e somente isso, não tem design diferenciado, performance melhorada e nem nada do tipo, é focado em criar aquilo o mais rápido possível e em algumas situações até com bugs não previstos. Com isso, será possível validar a ideia de forma rápida.</p>
@@ -40,19 +53,6 @@ export default function Home() {
           <p className="text-2xl leading-relaxed">Aplicar a Startup Enxuta não se limita a produtos de tecnologia. Qualquer projeto que envolva inovação, desde novos serviços até campanhas sociais, pode se beneficiar da abordagem enxuta. A chave está em manter o foco no aprendizado rápido e iterativo, evitando desperdícios de tempo, dinheiro e esforço em ideias que não trazem resultados reais para o público-alvo.</p>
 
           <p className="text-2xl leading-relaxed">Em resumo, a Startup Enxuta é uma metodologia que transforma incerteza em oportunidade, usando ciclos curtos de experimentação para validar hipóteses. Ao seguir os passos de construir, medir e aprender, as empresas conseguem desenvolver soluções mais eficientes, reduzir riscos e criar produtos que realmente têm valor para o usuário final. Essa abordagem ágil e pragmática continua a influenciar empreendedores em todo o mundo, mostrando que a eficiência e a inovação podem andar de mãos dadas.</p>
-
-
-          <div className="bg-black/70 border-2 border-yellow-400 p-6 shadow-inner">
-            <p className="font-mono text-green-300 text-lg">
-              &gt; Olá mundo... Startup Enxuta: esse livro pode deixar todo programador rico?
-            </p>
-          </div>
-
-          <img
-            src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
-            alt="Gif retrô"
-            className="mx-auto border-4 border-lime-300 shadow-[8px_8px_0px_black] w-64"
-          />
 
           <p className="text-xl">
             Obrigado por visitar! Feito com
